@@ -1,0 +1,262 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+h1 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+body {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+
+/*
+ * Laura's edits
+ */
+
+/*http://bavotasan.com/2011/style-select-box-using-only-css/*/
+.styled-select select {
+   background: transparent;
+   width: 268px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+}
+
+.styled-select {
+  margin-right: auto;
+  margin-left: auto;
+   width: 240px;
+   height: 34px;
+   overflow: hidden;
+   background: url(down_arrow_select.jpg) no-repeat right #ddd;
+   border: 1px solid #ccc;
+}
+
+.top{
+  margin-top: 5%;
+}
+
+#subDrop {
+  background: #474747;
+  border: #ddd;
+  width: 150px;
+  height: 30px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+#sub {
+  background: #474747;
+  border: #ddd;
+  width: 150px;
+  height: 30px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+#back{
+  position: relative;
+  margin-top: 5%;
+  color: #7E7E7E;
+  background-color: #333333;
+  border-color: #474747;
+}
+
+#otherText{
+  position: relative;
+  margin-top: 23%;
+  color: #7E7E7E;
+  background-color: #333333;
+  border-color: #474747;
+}
+
+#choose{
+  position: relative;
+  margin-top: 0%;
+  color: #7E7E7E;
+  background-color: #333333;
+  border-color: #474747;
+}
+
+#daStuff{
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  width: 500px;
+  height: 300px;
+  padding: 15px;
+  border-size: 2px;
+  border-style: solid;
+  border-color: #2E2E2E;
+}
+
+/*http://stackoverflow.com/questions/3323207/remove-firefox-glow-on-focused-textarea
+*/
+@-moz-document url-prefix() {
+    input:focus {
+        padding: 5px!important;
+    }
+}
+
